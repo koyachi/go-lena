@@ -1,5 +1,6 @@
 # go-lena
 
+Get classic image processing example image, Lena.
 
 ## Example
 
