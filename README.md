@@ -38,6 +38,10 @@ func main() {
 }
 ```
 
+## TODO
+
+- go-lena-production? (generate bindata.go without -debug flag, "go-bindata data")
+
 ## Links
 
 - http://en.wikipedia.org/wiki/Lenna
