@@ -2,6 +2,9 @@
 
 Get classic image processing example image, Lena.
 
+![lena.result.jpg](https://raw.githubusercontent.com/koyachi/go-lena/master/example/lena.result.jpg)
+
+
 ## Example
 
 ```go
