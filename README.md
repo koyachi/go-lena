@@ -22,8 +22,8 @@ make bindata.go.debug
 
 bindata.go for debug not contains lena image as go code, it reads tiff file from build environment's directory layout.
 
-Pros: a fast compile and image reading time.
-Cons: a failure to loading image. ($GOPATH)
+- Pros: a fast compile and image reading time.
+- Cons: a failure to read lena image. ($GOPATH)
 
 ## Example
 
