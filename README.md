@@ -4,6 +4,26 @@ Get classic image processing example image, Lena.
 
 ![lena.result.jpg](https://raw.githubusercontent.com/koyachi/go-lena/master/example/lena.result.jpg)
 
+## Installation
+
+### for production
+```
+go get github.com/koyachi/go-lena
+```
+
+Default bindata.go contains lena image as code, so the program that imports go-lena is easy to depoly. But compile and image reading time is slow.
+
+### for debug
+```
+go get github.com/koyachi/go-lena
+cd $GOPATH/src/github.com/koyachi/go-lena
+make bindata.go.debug
+```
+
+bindata.go for debug not contains lena image as go code, it reads tiff file from build environment's directory layout.
+
+Pros: a fast compile and image reading time.
+Cons: a failure to loading image. ($GOPATH)
 
 ## Example
 
@@ -40,10 +60,6 @@ func main() {
 	}
 }
 ```
-
-## TODO
-
-- go-lena-production? (generate bindata.go without -debug flag, "go-bindata data")
 
 ## Links
 
